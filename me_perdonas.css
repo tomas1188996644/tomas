@@ -41,7 +41,7 @@ button {
 
 button.button-common:before,
 button.button-common:after {
-    content: '♥';
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
