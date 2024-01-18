@@ -35,6 +35,12 @@ p {
     overflow: hidden;
 }
 
+button#No {
+    background-color: grey; /* Set the background color to grey */
+    border-color: grey; /* Set the border color to grey */
+    color: white; /* Set the text color to white or any contrasting color */
+}
+
 button {
     /* Individual styles for button elements */
 }
