@@ -41,11 +41,11 @@ button {
 
 button.button-common:before,
 button.button-common:after {
-    content: '♥♥';
-    position: absolute;
+    content: '♥';
+    position: left;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 5px;
+    font-size: 24px;
     color: white;
 }
 
