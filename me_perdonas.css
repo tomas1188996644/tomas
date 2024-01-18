@@ -43,9 +43,9 @@ button.button-common:before,
 button.button-common:after {
     content: '♥';
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
+    top: 30%;
+    transform: translateY(-30%);
+    font-size: 10px;
     color: white;
 }
 
