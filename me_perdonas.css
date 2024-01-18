@@ -43,14 +43,14 @@ button.button-common:before,
 button.button-common:after {
     content: '♥';
     position: absolute;
-    top: 100%;
-    transform: translateY(-100%);
-    font-size: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5px;
     color: white;
 }
 
 button.button-common:before {
-    left: 10px;
+    left: 20px;
 }
 
 button.button-common:after {
