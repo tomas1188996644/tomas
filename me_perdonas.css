@@ -1,0 +1,82 @@
+/* Styles for div elements */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for h1 elements */
+h1 {
+    padding: 20px;
+    color: #1E90FF; /* Changed to a shade of blue */
+    font-size: 2.5em; /* Increased font size */
+}
+
+/* Styles for p elements */
+p {
+    font-size: 1.5em; /* Adjusted font size */
+    color: #008000; /* Changed to green */
+    text-align: center;
+    margin-bottom: 20px; /* Added margin at the bottom */
+}
+
+/* Styles for button elements */
+button {
+    color: white;
+    width: 120px;
+    height: 60px;
+    border: 3px solid #FF69B4; /* Barbie pink color */
+    border-radius: 15px;
+    background-color: #FF69B4; /* Barbie pink color */
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:before,
+button:after {
+    content: '♥';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+}
+
+button:before {
+    left: 10px;
+}
+
+button:after {
+    right: 10px;
+}
+
+/* Styles for ID "Siii" */
+#Siiii {
+    grid-row: 5;
+    grid-column: 5;
+}
+
+/* Styles for ID "No" (Already defined in internal style) */
+
+/* Styles for section elements */
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+/* Styles for body elements */
+body {
+    max-width: 1200px;
+    max-height: 673px;
+    margin: 0 auto;
+    background-image: url(/foto/pngtree-landscapes-wallpaper-images-picture-image_3021437.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover;
+}
