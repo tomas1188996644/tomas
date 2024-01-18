@@ -8,26 +8,26 @@ div {
 /* Styles for h1 elements */
 h1 {
     padding: 20px;
-    color: #1E90FF; /* Changed to a shade of blue */
+    color: var(--blue-color); /* Changed to a shade of blue */
     font-size: 2.5em; /* Increased font size */
 }
 
 /* Styles for p elements */
 p {
     font-size: 1.5em; /* Adjusted font size */
-    color: #008000; /* Changed to green */
+    color: var(--green-color); /* Changed to green */
     text-align: center;
     margin-bottom: 20px; /* Added margin at the bottom */
 }
 
 /* Styles for button elements */
-button {
+.button-common {
     color: white;
     width: 120px;
     height: 60px;
-    border: 3px solid #FF69B4; /* Barbie pink color */
+    border: 3px solid var(--pink-color); /* Barbie pink color */
     border-radius: 15px;
-    background-color: #FF69B4; /* Barbie pink color */
+    background-color: var(--pink-color); /* Barbie pink color */
     font-size: 1.5em;
     margin: 10px;
     cursor: pointer;
@@ -35,8 +35,12 @@ button {
     overflow: hidden;
 }
 
-button:before,
-button:after {
+button {
+    /* Individual styles for button elements */
+}
+
+button.button-common:before,
+button.button-common:after {
     content: '♥';
     position: absolute;
     top: 50%;
@@ -45,16 +49,16 @@ button:after {
     color: white;
 }
 
-button:before {
+button.button-common:before {
     left: 10px;
 }
 
-button:after {
+button.button-common:after {
     right: 10px;
 }
 
 /* Styles for ID "Siii" */
-#Siiii {
+#Siii {
     grid-row: 5;
     grid-column: 5;
 }
@@ -76,7 +80,28 @@ body {
     max-height: 673px;
     margin: 0 auto;
     background-image: url(/foto/pngtree-landscapes-wallpaper-images-picture-image_3021437.jpg);
-    background-repeat: no-repeat; 
-    background-position: center center; 
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+}
+
+/* CSS Variables */
+:root {
+    --blue-color: #1E90FF;
+    --green-color: #008000;
+    --pink-color: #FF69B4;
+}
+
+/* Media Query for Smaller Screens */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8em; /* Adjusted font size for smaller screens */
+    }
+
+    button.button-common {
+        width: 100%; /* Make buttons full width on smaller screens */
+        margin: 10px 0; /* Adjusted margin for smaller screens */
+    }
+
+    /* Add more styles as needed for smaller screens */
 }

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Your brief description here">
     <title>ee belen</title>
-    
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="me_perdonas.css">
-    
+
     <!-- Internal Style for ID "No" -->
     <style>
         #No {
@@ -15,8 +14,15 @@
             grid-column: 6;
         }
     </style>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="me_perdonas.css">
+
+    <!-- Favicon link -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>  
+
+<body>
     <div>
         <!-- Hidden Paragraph -->
         <p id="p" hidden>Vamoo</p>
@@ -26,12 +32,13 @@
 
         <!-- Section with Buttons -->
         <section>
-            <button id="Si">♥ ¡Sí!</button>
-            <button id="No">No</button>
+            <button id="Si" aria-label="Yes" class="button-common">♥ ¡Sí!</button>
+            <button id="No" aria-label="No" class="button-common">No</button>
         </section>
     </div>
-   
+
     <!-- External JavaScript -->
     <script src="me_perdonas.js"></script>
 </body>
+
 </html>
